@@ -204,7 +204,7 @@ class _SpinWheelPageState extends State<SpinWheelPage> {
                             ),
                           );
                         }),
-                    const SizedBox(height: 50),
+                    const SizedBox(height: 90),
                   ],
                 ),
               ),
@@ -218,21 +218,29 @@ class _SpinWheelPageState extends State<SpinWheelPage> {
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
             FloatingActionButton(
+              backgroundColor: Colors.black,
               onPressed: () {
                 addItem(context);
               },
               tooltip: 'Add Item',
-              child: const Icon(Icons.add),
+              child: const Icon(
+                Icons.add,
+                color: Colors.white,
+              ),
             ),
             const SizedBox(width: 8),
             FloatingActionButton(
+              backgroundColor: Colors.black,
               onPressed: () {
                 setState(() {
                   items.shuffle();
                 });
               },
               tooltip: 'Shuffle',
-              child: const Icon(Icons.shuffle),
+              child: const Icon(
+                Icons.shuffle,
+                color: Colors.white,
+              ),
             ),
           ],
         ),
