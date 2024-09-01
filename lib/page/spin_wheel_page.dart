@@ -369,6 +369,7 @@ class _SpinWheelPageState extends State<SpinWheelPage> {
     return showDialog(
       context: context,
       builder: (context) => AlertDialog(
+        title: const Text('Result'),
         content: Row(
           mainAxisSize: MainAxisSize.min,
           mainAxisAlignment: MainAxisAlignment.center,
